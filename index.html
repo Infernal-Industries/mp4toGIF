@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windburst</title>
+    <style>
+        @font-face {
+            font-family: 'Chinese Rocks';
+            src: url('assets/fonts/chinese_rocks.otf') format('opentype');
+        }
+        
+        /* Reset margins and set full-screen height */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100%;
+            overflow-y: auto;
+        }
+        
+        /* Style for the title */
+        .title {
+            font-size: 2.5rem;
+            font-family: 'Chinese Rocks', Arial, sans-serif;
+            color: white;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        /* Style for the video container */
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Windburst</h1>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="assets/clips/Windburst.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
